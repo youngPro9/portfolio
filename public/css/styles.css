@@ -1,0 +1,68 @@
+/* Navbar */
+.nav-link {
+  font-size: 1.25rem;
+}
+
+/* Home Section */
+#home {
+  padding: 7rem 0;
+  background-image: url("../imgs/IMG_1400.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  height: 31.25rem;
+}
+
+.home-container {
+  text-align: center;
+  color: #fff;
+  font-family: 'Caveat', cursive;
+}
+
+.home-container h2 {
+  font-size: 3.5rem;
+}
+
+.home-container h1 {
+  font-size: 4rem;
+}
+
+/*  information Section */
+#information {
+  padding: 7rem 0;
+  background-color: #dee4e8;
+}
+
+.information-container h1 {
+  text-align: left;
+  font-family: 'Special Elite', cursive;
+  color: maroon;
+  font-weight: 700;
+}
+
+.information-container h4 {
+  font-family: 'Josefin Slab', serif;
+  font-weight: 700;
+  color: #e89127;
+}
+
+.information-container h5 {
+  font-family: 'Josefin Slab', serif;
+  font-weight: 700;
+  color: #000;
+}
+
+.infomration-container p{
+  color: blue;
+}
+
+#projects {
+  padding: 7rem 0;
+  background-color: #fff;
+}
+
+@media (min-width: 1200px) {
+  #home {
+    background-position: center;
+  }
+}
