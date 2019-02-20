@@ -9,7 +9,6 @@
   background-image: url("../imgs/IMG_1400.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: top;
   height: 31.25rem;
 }
 
@@ -27,6 +26,7 @@
   font-size: 4rem;
 }
 
+
 /*  information Section */
 #information {
   padding: 7rem 0;
@@ -38,6 +38,7 @@
   font-family: 'Special Elite', cursive;
   color: maroon;
   font-weight: 700;
+  display: block;
 }
 
 .information-container h4 {
@@ -52,17 +53,28 @@
   color: #000;
 }
 
-.infomration-container p{
-  color: blue;
-}
 
+/* Project Section */
 #projects {
   padding: 7rem 0;
   background-color: #fff;
 }
+
+.project-heading {
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.project-img {
+  border-radius: 10%;
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
 
 @media (min-width: 1200px) {
   #home {
     background-position: center;
   }
 }
+

@@ -48,32 +48,55 @@
           <img class="img-fluid" src="public/imgs/vt_logo.png" alt="vt-logo">
         </div>
 
-        <div class="col-8">
-          <div class="row">
+        <div class="col-8 m-auto">
           <h1>Virginia Tech</h1>
           <h4>Bachelor of Science, earned Dec 2018</h4>
           <h5>Major in Computer Engineering</h5>
           <h5>Minor in Computer Science</h5>
+        
 
-          </div>
-          <div class="row">
-            <p class="infomration-p">Studying at Virginia Tech not only proivded me with valuable programming skills
-               and knowledge, but also professional engineering responsibility and engineering ethics.
-               It was a overall great experience and attending VT is one of the best choices I have made in my life.
-             </p>
-
-          </div>
-
+          <p class="infomration-p">Studying at Virginia Tech not only proivded me with valuable programming skills
+              and knowledge, but also professional engineering responsibility and engineering ethics.
+              It was a overall great experience attending studying at VT and
+              it's one of the best choices I have made in my life.
+          </p>
+          
         </div>
       </div>
     </div>
-
-
   </section>
 
 
+
+
   <section id="projects">
-    <h1>hihihi</h1>
+      <div class="container project-container">
+          <div class="row">
+            <div class="col">
+              <div class="project-heading">
+                <h2>The Obstacle Arm</h3>
+                <h5>C, Python, FreeRTOS</h5>
+              </div>
+              <div class="row">
+                <div class="col-md">
+                  <img class="img-fluid project-img" src="public/imgs/rover.jpg" alt="rover">
+                </div>
+                <div class="col-md">
+                  <p>
+                    The Obstacle Arm is the Rover with the robotic arm and IR sensor attached 
+                    to its top and front respectively. The Rover follows the path retrieved from server.
+                    While it's in operation, the IR sensor sends "detected" signal to the Rover  
+                    if anything is detected in the front within 5 cm distance. 
+                    Once the Rover receives the "detected" signal, it stops and communicates with server 
+                    that sends "move obstalce" signal to the robotic arm. The server, then, waits for the 
+                    "complete" message from the arm. After "complete" message's retrieved, server keeps sending 
+                    the operation commands to the Rover to make it follow the path.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
   </section>
 
 
