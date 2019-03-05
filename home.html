@@ -6,7 +6,7 @@
   <title>Youngsu Kim</title>
 
   <!-- google font -->
-  <link href="https://fonts.googleapis.com/css?family=Caveat|Josefin+Slab|Special+Elite" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Caveat|Josefin+Slab|Special+Elite|Montserrat:700|PT+Sans" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -70,39 +70,246 @@
 
 
   <section id="projects">
+    <div class="container project-container">
+        <div class="row">
+          <div class="col">
+            <div class="project-heading">
+              <h2>The Obstacle Arm</h3>
+              <h5>C, Python, Node.js</h5>
+            </div>
+            <div class="row">
+              <div class="col-md text-center m-auto">
+                <img class="project-img" src="public/imgs/rover.jpg" alt="rover">
+              </div>  
+              <div class="col-md project-dscrp">
+                <p>
+                  The Obstacle Arm is the Rover with the robotic arm and IR sensor attached 
+                  to its top and front respectively. The Rover follows the path retrieved from server.
+                  While it's in operation, the IR sensor sends "detected" signal to the Rover 
+                  if anything is detected in the front within 5 cm distance. 
+                  Once the Rover receives the "detected" signal, Rover stops moving and communicates with server 
+                  so that server sends "move obstacle" signal to the robotic arm. The server, then, waits for the 
+                  "complete" message from the arm. After "complete" message's retrieved, server sends the remaining 
+                  operation commands to the Rover.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
       <div class="container project-container">
           <div class="row">
             <div class="col">
               <div class="project-heading">
-                <h2>The Obstacle Arm</h3>
-                <h5>C, Python, FreeRTOS</h5>
+                <h2>The Flower Detection</h3>
+                <h5>Python, Java</h5>
               </div>
               <div class="row">
-                <div class="col-md text-center ">
-                  <img class="project-img" src="public/imgs/rover.jpg" alt="rover">
+                <div class="col-md text-center m-auto">
+                  <img class="project-img" src="public/imgs/flower_detection.jpg" alt="flower-detection">
                 </div>
-                <div class="col-md">
+                <div class="col-md project-dscrp">
                   <p>
-                    The Obstacle Arm is the Rover with the robotic arm and IR sensor attached 
-                    to its top and front respectively. The Rover follows the path retrieved from server.
-                    While it's in operation, the IR sensor sends "detected" signal to the Rover  
-                    if anything is detected in the front within 5 cm distance. 
-                    Once the Rover receives the "detected" signal, it stops and communicates with server 
-                    that sends "move obstalce" signal to the robotic arm. The server, then, waits for the 
-                    "complete" message from the arm. After "complete" message's retrieved, server keeps sending 
-                    the operation commands to the Rover to make it follow the path.
+                    The Flower Detection is an Adroid app and is simply a super lightweight botanical dictionary.
+                    The app lets a user to take a picture of an interesting flower 
+                    and retrieve the name of the flower along with a brief description of it within seconds.
+                    The server is written in C and hosted on Raspberry Pi 3. The server receives the image of the flower 
+                    from the user via REST API and anlayze it by using Google Vision API. The name of the flower is taken 
+                    out of the response from Cloud Vision and is sent to the Wolfram Alpha to get the description of the flower.
+                    As soon as the description is received, it's posted to the user's URL and the app displays the name and information of 
+                    the flower.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+      <hr>
+
+      <div class="container project-container">
+        <div class="row">
+          <div class="col">
+            <div class="project-heading">
+              <h2>Blog</h3>
+              <h5>Node.js MongoDB Bootstrap </h5>
+            </div>
+            <div class="row">
+              <div class="col-md text-center m-auto">
+                <img class="project-img" src="public/imgs/blog_img.jpg" alt="blog-img">
+              </div>
+              <div class="col-md project-dscrp">
+                <p>
+                  I've made my own blog by using Bootstrap and Node.js for front-end and back-end respectively.
+                  There are 3 categories that every post can belong to which are Diary, Recipe, and Travel. Every post can be tagged with 
+                  composer-defined tag name so that users can search for a particular tag and see all posts with that tag name. 
+                  Users can sign up and sign in to my blog to comment on my blog posts. By using authentication middleware, Passport, 
+                  users can use their Google or Facebook account to sign up and sign in to my blog to be secure.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </section>
 
 
 
   <section id="skill">
+    <div class="container-fluid">
+      <div class="skill-heading">
+          <h1>Skills</h1>
+      </div>
 
+      <div class="row justify-content-center">
+        <div class="col-4">
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                    <p>C++</p>
+                </div>
+                <div class="col skill-star">
+                    <p>⭐️⭐⭐️️⭐️⭐️️️️️</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                    <p>C</p>
+                </div>
+                <div class="col skill-star">
+                    <p>⭐️⭐⭐️️⭐️⭐️️️️️</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                    <p>Java</p>
+                </div>
+                <div class="col skill-star">
+                    <p>⭐️⭐⭐️⭐️️️️️</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                    <p>Python</p>
+                </div>
+                <div class="col skill-star">
+                    <p>⭐️⭐⭐️⭐️️️️️</p>
+                </div>
+              </div>  
+
+              <div class="row">
+                <div class="col">
+                    <p>Git</p>
+                </div>
+                <div class="col skill-star">
+                    <p>⭐️⭐⭐⭐️⭐️️️️️️️️️️️️️️️</p>
+                </div>
+              </div>  
+
+              <div class="row">
+                <div class="col">
+                    <p>MySQL</p>
+                </div>
+                <div class="col skill-star">
+                    <p>⭐️⭐⭐️️⭐️️️️️</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                    <p>MongoDB</p>
+                </div>
+                <div class="col skill-star">
+                    <p>⭐️⭐⭐️️⭐️⭐️️️️️</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1">
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-4">
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                    <p>HTML, CSS, JS</p>
+                </div>
+                <div class="col skill-star">
+                    <p>⭐️⭐⭐️️⭐️⭐️️️️️</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                    <p>Node.js Express.js</p>
+                </div>
+                <div class="col skill-star">
+                    <p>⭐️⭐⭐️️⭐️⭐️️️️️</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                    <p>React</p>
+                </div>
+                <div class="col skill-star">
+                    <p>⭐️⭐⭐️️️️️</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                    <p>Windows</p>
+                </div>
+                <div class="col skill-star">
+                    <p>⭐️⭐⭐️️⭐️⭐️️️️️</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                    <p>Linux</p>
+                </div>
+                <div class="col skill-star">
+                    <p>⭐️⭐⭐️⭐️️️️️</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                    <p>Visual Studio</p>
+                </div>
+                <div class="col skill-star">
+                    <p>⭐️⭐⭐️⭐⭐️️️️️</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                    <p>Eclipse</p>
+                </div>
+                <div class="col skill-star">
+                    <p>⭐️⭐⭐️⭐⭐️️️️️</p>
+                </div>
+              </div>
+                  
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </section>
 
 
