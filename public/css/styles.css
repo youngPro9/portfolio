@@ -116,3 +116,22 @@ hr{
 .skill-star {
   text-align: left;
 }
+
+
+/* Contact Section */
+#contact {
+  padding: 7rem 0;
+  text-align: center;
+}
+
+.contact-heading {
+  margin-bottom: 2rem;
+}
+
+.contact-icon {
+  margin: 4rem 0;
+}
+
+.icon{
+  margin: 2rem;
+}
